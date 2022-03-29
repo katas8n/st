@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  &__input {
+    width: 20rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  &__button {
+    align-self: center;
+    margin-top: 1rem;
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+}

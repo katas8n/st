@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import "./assets/style/variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+li {
+  list-style-type: none;
+  cursor: pointer;
+  transition: 1000ms ease;
+}
+li:hover {
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+
+.app {
+  font-family: $reg-font;
+}
+.content,
+.question {
+  padding: 3rem;
+}
+.question {
+  background-color: #f6f7f8;
+  &__item {
+    font-weight: 600;
+    margin-top: 1rem;
+    &-text {
+      font-weight: 300;
+    }
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  &__choose {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  &__choosen {
+    margin-right: 2rem;
+  }
+}
+.active {
+  border-bottom: 1px solid black;
+  font-weight: 600;
+}
+.image {
+  width: 18rem;
+  height: 12rem;
+}
+.pages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+.pages__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+  flex-direction: column;
+}
+.page {
+  width: 100%;
+  &__title {
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+.content__choosen {
+  cursor: pointer;
+}
+.login {
+  font-family: $reg-font;
+  color: $not-active;
+  background-color: $add-fn-c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.incorrect {
+  color: red;
+}
+
+.error__message {
+  color: tomato;
+}
+.form__submit {
+  margin-top: 1rem;
+  background-color: lightgreen;
+  width: 5rem;
+  height: 5rem;
+  align-self: center;
+  border-radius: 50%;
+}
+.add__button {
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  height: 1.7rem;
+  cursor: pointer;
+}
+.form__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.add__text {
+  margin-top: 1rem;
+}
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page__title {
+  color: #232323;
+}
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__checkbox {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.footer__btn {
+  margin-left: 2rem;
+}
+.area {
+  height: 10rem;
+}
+.delete {
+  margin-bottom: 0.5rem;
+  background-color: red;
+  color: #f6f7f8;
+  font-weight: 900;
+  border: none;
+}
+.button__wrapper {
+  width: 20%;
+}
+@media (min-device-width: 256px) {
+  .header {
+    display: flex;
+    // height: 100vh;
+    justify-content: center;
+
+    &__title {
+      padding: 2rem;
+      font-size: 5rem;
+    }
+    &__text {
+      font-size: 2rem;
+      margin-left: 2rem;
+    }
+    &__input {
+      height: 6rem;
+      font-size: 1.8rem;
+      width: 42rem;
+    }
+  }
+  .content {
+    &__title {
+      font-size: 4rem;
+    }
+    &__choose {
+      font-size: 2rem;
+    }
+    .image {
+      width: 45rem;
+      height: 30rem;
+    }
+  }
+  .pages {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .page {
+    width: 100%;
+    &__title {
+      font-size: 2.3rem;
+    }
+  }
+  .question {
+    &__title {
+      font-size: 2rem;
+    }
+    &__item {
+      font-size: 1.3rem;
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      margin-top: 4rem;
+      font-size: 1.5rem;
+    }
+    &__el {
+      font-size: 0.8rem;
+    }
+    &__el {
+      font-size: 1rem;
+    }
+  }
+
+  .brand {
+    font-size: 1.4rem;
+  }
+  .img {
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    width: 40rem;
+  }
+}
+@media (min-device-width: 576px) {
+  .img {
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    width: 100%;
+  }
+  .header {
+    display: flex;
+    // height: 100vh;
+    justify-content: center;
+
+    &__title {
+      padding: 2rem;
+      font-size: 5rem;
+    }
+    &__text {
+      font-size: 2rem;
+      margin-left: 2rem;
+    }
+    &__input {
+      height: 4rem;
+      font-size: 1.2rem;
+      width: 32rem;
+    }
+  }
+  .content {
+    &__title {
+      font-size: 2rem;
+    }
+    &__choose {
+      font-size: 1.2rem;
+    }
+    .image {
+      width: 22.5rem;
+      height: 18rem;
+    }
+  }
+  .pages {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .page {
+    width: 100%;
+    &__title {
+      font-size: 1.3rem;
+    }
+  }
+  .question {
+    &__item {
+      font-size: 1.3rem;
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 1rem;
+    &__part {
+      padding: 2rem;
+    }
+    &__title {
+      margin-top: 0rem;
+      max-width: 12rem;
+      font-size: 1.3rem;
+    }
+    &__el {
+      font-size: 0.8rem;
+    }
+    .brand {
+      font-size: 0.5rem;
+    }
+  }
+}
+@media (min-device-width: 800px) {
+  .header {
+    display: flex;
+    // height: 100vh;
+    justify-content: center;
+
+    &__title {
+      padding: 1rem;
+      font-size: 3rem;
+    }
+    &__text {
+      font-size: 1.2rem;
+      margin-left: 2rem;
+    }
+    &__input {
+      height: 3rem;
+      font-size: 1.2rem;
+      width: 32rem;
+    }
+  }
+  .content {
+    &__title {
+      font-size: 2rem;
+    }
+    &__choose {
+      font-size: 1.2rem;
+    }
+    .image {
+      width: 18rem;
+      height: 12rem;
+    }
+  }
+  .pages {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .page {
+    width: 100%;
+    &__title {
+      font-size: 1.1rem;
+    }
+  }
+  .question {
+    &__item {
+      font-size: 1.1rem;
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 1rem;
+    &__part {
+      padding: 2rem;
+    }
+    &__title {
+      margin-top: 0rem;
+      max-width: 12rem;
+      font-size: 1.3rem;
+    }
+    &__el {
+      font-size: 0.8rem;
+    }
+    .brand {
+      font-size: 1rem;
+    }
+  }
+}
+@media (min-device-width: 1300px) {
+  .header {
+    padding: 13rem;
+    &__title {
+      padding: 2rem;
+      font-size: 4rem;
+    }
+    &__text {
+      font-size: 1.2rem;
+    }
+  }
+  .pages {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .footer {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    &__part {
+      padding: 0rem;
+    }
+
+    &__list {
+      color: #ffffffb2;
+      font-weight: 100;
+    }
+    &__el,
+    &__title {
+      padding: 0.8rem;
+    }
+    &__el {
+      font-size: 0.9rem;
+    }
+  }
+  .brand {
+    font-size: 0.8rem;
+    padding: 1.5rem;
+    border-top: 1px solid #dde0eb2f;
+    &__text {
+      color: #ffffff;
+      margin-left: 1.5rem;
+    }
+  }
+  .image {
+    width: 5rem;
+  }
+}
+.reverse__btn {
+  width: 20%;
+  margin-bottom: 2rem;
+  background-color: #232323;
+  color: #f6f7f8;
+  height: 3rem;
+  border-radius: 0.2rem;
+  align-self: center;
+  font-size: 1.1rem;
+}
+.reverse {
+  width: 20%;
+  margin-bottom: 2rem;
+  background-color: #f6f7f8;
+  color: #232323;
+  height: 3rem;
+  border-radius: 0.2rem;
+  align-self: center;
+  font-size: 1.1rem;
+}
+.back__img {
+  cursor: pointer;
+  position: absolute;
+  width: 5%;
+  top: 2%;
+  left: 2%;
+}

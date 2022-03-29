@@ -1,0 +1,36 @@
+@import "../../assets/style/variables.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../../assets/images/main.png");
+  background-position: center;
+  background-size: cover;
+  padding: 13rem;
+  &__title {
+    font-size: 4rem;
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  &__input {
+    border-radius: 2rem;
+    height: 3rem;
+    width: 32.5rem;
+    padding: 1rem;
+    border: none;
+    font-size: 0.9rem;
+  }
+}
+
+.img {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  width: 100%;
+}

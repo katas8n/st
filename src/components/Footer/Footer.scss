@@ -1,0 +1,33 @@
+@import "../../assets/style/variables.scss";
+
+.footer {
+  padding: 3rem;
+  background-color: $additional-color;
+  display: flex;
+  justify-content: space-between;
+
+  &__part {
+    color: $w-t-c;
+  }
+  &__list {
+    color: #ffffffb2;
+    font-weight: 100;
+  }
+  &__el,
+  &__title {
+    padding: 0.8rem;
+  }
+  &__el {
+    font-size: 0.9rem;
+  }
+}
+.brand {
+  background-color: $additional-color;
+  font-size: 0.8rem;
+  padding: 1.5rem;
+  border-top: 1px solid #dde0eb2f;
+  &__text {
+    color: #ffffff;
+    margin-left: 1.5rem;
+  }
+}

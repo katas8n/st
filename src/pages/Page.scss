@@ -1,0 +1,79 @@
+.str {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  flex-direction: column;
+  &__image {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-self: center;
+    width: 45%;
+    border-radius: 0.1rem;
+  }
+  &__title,
+  &__text {
+    margin-left: 3rem;
+    padding: 1rem;
+  }
+  &__title {
+    font-size: 2rem;
+  }
+  &__text {
+    overflow-wrap: break-word;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-device-width: 256px) {
+  .str {
+    &__image {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      align-self: center;
+      width: 80%;
+      border-radius: 0.1rem;
+    }
+  }
+}
+@media (min-device-width: 576px) {
+  .str {
+    &__image {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      align-self: center;
+      width: 70%;
+      border-radius: 0.1rem;
+    }
+  }
+}
+@media (min-device-width: 800px) {
+  .str {
+    &__image {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      align-self: center;
+      width: 60%;
+      border-radius: 0.1rem;
+    }
+  }
+}
+@media (min-device-width: 1200px) {
+  .str {
+    &__image {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      align-self: center;
+      width: 50%;
+      border-radius: 0.1rem;
+    }
+  }
+}
+.visible__button {
+  background-color: rgba(0, 200, 0, 0.493);
+  width: 15%;
+  border: none;
+  height: 1.7rem;
+  margin-left: 1rem;
+}
+.dis {
+  background-color: grey;
+}
